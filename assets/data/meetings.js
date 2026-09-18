@@ -4,13 +4,8 @@
    External snapshots are source-attributed and should be refreshed from the linked official indexes. */
 window.TTOB_MEETING_DATA = {
   "sourceTimezone": "America/Los_Angeles",
-  "tribeSource": "https://drive.google.com/open?id=1xQhYxlE9FjEm1b3ZHBnUoKpNVH1fU_7F&usp=drive_fs",
+  "tribeSource": null,
   "quickTools": [
-    {
-      "name": "TToB MEN’S MEETING LIST",
-      "url": "https://drive.google.com/open?id=1xQhYxlE9FjEm1b3ZHBnUoKpNVH1fU_7F&usp=drive_fs",
-      "note": "The current TToB meeting guide"
-    },
     {
       "name": "12 STEP SEARCH",
       "url": "https://meetings.love",
@@ -40,27 +35,11 @@ window.TTOB_MEETING_DATA = {
     },
     {
       "day": "Monday",
-      "time": "12:00",
-      "title": "Men, Masculinities and Recovery",
-      "id": "821 2056 1171",
-      "password": "808678",
-      "url": "https://us02web.zoom.us/j/82120561171?pwd=xauPhBbgT9WWiN1e3y8EgLv01mzwSP.1"
-    },
-    {
-      "day": "Monday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "890 3200 3902",
       "password": "837692",
       "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
-    },
-    {
-      "day": "Tuesday",
-      "time": "11:00",
-      "title": "A New Hope for Men ACA",
-      "id": "811 7457 5758",
-      "password": "007783",
-      "url": "https://us02web.zoom.us/j/81174575758?pwd=rXvvIhLagUN4FwhlcJ4hQRchk0uOfa.1"
     },
     {
       "day": "Tuesday",
@@ -72,27 +51,11 @@ window.TTOB_MEETING_DATA = {
     },
     {
       "day": "Wednesday",
-      "time": "11:30",
-      "title": "Healing in Brotherhood ACA",
-      "id": "859 2343 0060",
-      "password": "499821",
-      "url": "https://us02web.zoom.us/j/85923430060?pwd=rM6i5800Xgfzas1PLmx90iSUJ9R0v4.1"
-    },
-    {
-      "day": "Wednesday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "890 3200 3902",
       "password": "837692",
       "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
-    },
-    {
-      "day": "Thursday",
-      "time": "11:30",
-      "title": "Men's Step Study - Tony A",
-      "id": "858 1124 3854",
-      "password": "523106",
-      "url": "https://us02web.zoom.us/j/85811243854?pwd=C8nH0Ntv1j74zJPEGMdmhgJebnmunf.1"
     },
     {
       "day": "Thursday",
@@ -104,27 +67,11 @@ window.TTOB_MEETING_DATA = {
     },
     {
       "day": "Friday",
-      "time": "12:00",
-      "title": "No More Secrets ACA",
-      "id": "856 5383 4416",
-      "password": "265140",
-      "url": "https://us02web.zoom.us/j/85653834416?pwd=UqWoFT5WWjqrPb1pJj2VcrkNuFCkbW.1"
-    },
-    {
-      "day": "Friday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "890 3200 3902",
       "password": "837692",
       "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
-    },
-    {
-      "day": "Saturday",
-      "time": "13:00",
-      "title": "Brother to Brother SIA/ACA",
-      "id": "858 1799 7467",
-      "password": "663957",
-      "url": "https://us02web.zoom.us/j/85817997467?pwd=TGhIWXJhU0c1cXB3aU1UaytRNmNIdz09"
     },
     {
       "day": "Saturday",
@@ -338,3 +285,38 @@ window.TTOB_MEETING_DATA = {
     }
   ]
 };
+
+
+/* TTOB_SPLIT_MEETING_BLOCKLIST_V1
+   Former split-off meetings must never render in TToB-owned meeting results. */
+(function(){
+  function normalise(v){
+    return String(v==null?'':v).toLowerCase().normalize('NFKD')
+      .replace(/[\u2018\u2019']/g,'')
+      .replace(/[^a-z0-9]+/g,' ')
+      .trim();
+  }
+  const blockedNames=[
+    'Healing in Brotherhood ACA',
+    'Men, Masculinities and Recovery',
+    "Men's Step Study - Tony A",
+    'A New Hope for Men ACA',
+    'No More Secrets ACA',
+    'Brother to Brother SIA/ACA'
+  ].map(normalise);
+  const blockedMeetingIds=[
+    '85923430060','82120561171','85811243854',
+    '81174575758','85653834416','85817997467'
+  ];
+  window.TTOB_IS_BLOCKED_MEETING=function(m){
+    m=m||{};
+    const haystack=normalise([
+      m.MeetName,m.title,m.Name,m.Location,m.Notes,m.virtualInfo,m.fellowship
+    ].filter(Boolean).join(' '));
+    if(blockedNames.some(name=>haystack.includes(name))) return true;
+    const digits=[
+      m.virtualInfo,m.Location,m.Notes,m.id,m.MeetingID,m.WSO,m.WSOID
+    ].filter(Boolean).join(' ').replace(/\D/g,'');
+    return blockedMeetingIds.some(id=>digits.includes(id));
+  };
+})();
