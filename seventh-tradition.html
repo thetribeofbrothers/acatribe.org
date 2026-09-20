@@ -511,8 +511,15 @@ header.topbar,header.reading-top,.floating-actions{display:none !important}
   .meeting-actions a:after,.meeting-tab:after{display:none!important}
 }
 
-/* HABO platinum PayPal treatment */
-.habo-paypal{display:inline-flex!important;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:min(100%,380px);padding:16px 24px!important;border-radius:999px!important;text-decoration:none;border:1px solid #b8bec6!important;background:linear-gradient(180deg,#f7f9fb 0%,#e5e9ee 48%,#cfd6dd 100%)!important;color:#101820!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 10px 24px rgba(0,0,0,.16);transition:transform .16s ease,box-shadow .16s ease,filter .16s ease,border-color .16s ease}.habo-paypal:hover,.habo-paypal:focus-visible{transform:translateY(-2px);filter:brightness(1.03);border-color:#d6dce2!important;box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 14px 30px rgba(0,0,0,.22)}.habo-paypal:focus-visible{outline:3px solid rgba(230,233,236,.9);outline-offset:4px}.habo-paypal .habo-main{font-family:Arial,sans-serif;font-weight:800;font-size:.92rem;letter-spacing:.03em;line-height:1.1;text-align:center;color:#0f1720}.habo-paypal .habo-sub{font-family:Arial,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;line-height:1;color:#49525c}@media(max-width:540px){.habo-paypal{width:100%;min-width:0}}
+/* HABO cinematic platinum + PayPal treatment */
+.habo-paypal{display:inline-flex!important;flex-direction:column;align-items:stretch;justify-content:center;min-width:min(100%,360px);padding:0!important;border:0!important;border-radius:24px!important;text-decoration:none!important;background:transparent!important;color:#101820!important;box-shadow:0 16px 34px rgba(0,0,0,.18);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.habo-paypal:hover,.habo-paypal:focus-visible{transform:translateY(-3px) scale(1.01);filter:brightness(1.025);box-shadow:0 22px 42px rgba(0,0,0,.24)}
+.habo-paypal:focus-visible{outline:3px solid rgba(215,221,227,.95);outline-offset:5px}
+.habo-paypal .habo-main{display:grid;place-items:center;min-height:72px;padding:16px 30px;font:900 1.12rem/1 Arial,sans-serif;letter-spacing:.18em;text-align:center;color:#101820;background:linear-gradient(180deg,#fbfcfd 0%,#e7ebef 48%,#cbd2d9 100%);border:1px solid #b5bdc5;border-bottom:0;text-shadow:0 1px 0 rgba(255,255,255,.8)}
+.habo-paypal .habo-paypal-badge{display:grid;place-items:center;min-height:42px;padding:9px 22px;background:linear-gradient(180deg,#ffd95a 0%,#ffc439 100%);border:1px solid #d3aa2f;border-top:1px solid rgba(255,255,255,.55)}
+.habo-paypal .paypal-wordmark{font:900 1rem/1 Arial,sans-serif;letter-spacing:-.02em;color:#003087;text-shadow:0 1px 0 rgba(255,255,255,.3)}
+@media(max-width:540px){.habo-paypal{width:100%;min-width:0}.habo-paypal .habo-main{min-height:66px}.habo-paypal .habo-paypal-badge{min-height:40px}}
+
 </style>
 <style id="v7-2-tradition-rest-state-fix">
 .cinematic-btn.tradition{background:linear-gradient(180deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.035) 15%,rgba(0,0,0,.15) 100%),linear-gradient(135deg,#17222d 0%,#050b10 48%,#111d27 100%)!important;border-color:#d8dde2!important;font-weight:900}
@@ -749,7 +756,7 @@ header.topbar,header.reading-top,.floating-actions{display:none !important}
 <div class="section-kicker">7th Tradition Link</div>
 <h3>HABO — Help A Brother Out</h3>
 <p>Every contribution helps keep the meetings, resources and recovery infrastructure available for the next Brother.</p>
-<a class="paypal-cta ttob-slim-action habo-paypal" href="https://paypal.me/TheTribeOfBrothers" rel="noopener" target="_blank"><span class="habo-main">HABO — Help A Brother Out</span><span class="habo-sub">via PayPal</span></a>
+<a class="paypal-cta ttob-slim-action habo-paypal" href="https://paypal.me/TheTribeOfBrothers" rel="noopener" target="_blank" aria-label="HABO — Help A Brother Out via PayPal"><span class="habo-main">HABO</span><span class="habo-paypal-badge"><span class="paypal-wordmark">PayPal</span></span></a>
 <div class="authority-link-note">paypal.me/TheTribeOfBrothers</div>
 </div>
 </section>
