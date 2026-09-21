@@ -344,13 +344,13 @@ window.TTOB_CATALOGS = {
       "kind": "Workbook"
     },
     {
-      "emblem": "LIST",
-      "title": "The Meetings List",
-      "description": "The current TToB men’s meeting guide and directory, including the Tribe’s weekly meetings.",
-      "href": "https://drive.google.com/open?id=1xQhYxlE9FjEm1b3ZHBnUoKpNVH1fU_7F&usp=drive_fs",
-      "action": "Open Meeting List",
-      "external": true,
-      "kind": "Meeting Guide"
+      "emblem": "LIVE",
+      "title": "TToB Meetings & Community",
+      "description": "Open the live TToB meetings page for today’s Tribe meeting and current meeting-discovery tools.",
+      "href": "https://www.acatribe.org/meetings",
+      "action": "Find Today’s Meetings",
+      "external": false,
+      "kind": "Meetings"
     },
     {
       "emblem": "ALL",
