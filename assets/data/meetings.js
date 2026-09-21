@@ -29,57 +29,57 @@ window.TTOB_MEETING_DATA = {
       "day": "Sunday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Monday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Tuesday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Wednesday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Thursday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Friday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
       "day": "Saturday",
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
-      "id": "890 3200 3902",
-      "password": "837692",
-      "url": "https://us02web.zoom.us/j/89032003902?pwd=rj5ZJpGmT3q2v7hvUBz5sbPBIEWgQo.1"
+      "id": "834 2614 5997",
+      "password": "Included in join link",
+      "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     }
   ],
   "verifiedExternalMenSnapshots": [
