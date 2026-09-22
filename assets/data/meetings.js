@@ -30,7 +30,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -38,7 +38,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -46,7 +46,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -54,7 +54,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -62,7 +62,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -70,7 +70,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     },
     {
@@ -78,7 +78,7 @@ window.TTOB_MEETING_DATA = {
       "time": "14:30",
       "title": "The Tribe - Gratitude and Check-In",
       "id": "834 2614 5997",
-      "password": "Included in join link",
+      "password": "Brother",
       "url": "https://us05web.zoom.us/j/83426145997?pwd=vbUzHGiIwSylvkawDC2YABFmKlRbuB.1"
     }
   ],
